@@ -11,7 +11,7 @@ RUN mv wp-cli.phar /usr/local/bin/wp
 RUN mkdir -p /run/php
 
 COPY tools/script.sh /
-COPY ./tools/wp-config.php /
+COPY tools/wp-config.php /
 RUN chmod +x /script.sh /wp-config.php
 ENTRYPOINT ["/script.sh"]
 
