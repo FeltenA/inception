@@ -47,13 +47,13 @@ volumes:
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/home/afelten42/data/wordpress'
+      device: '/home/afelten/data/wordpress'
   mariadb:
     driver: local
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/home/afelten42/data/mariadb'
+      device: '/home/afelten/data/mariadb'
 
 networks:
   inception:
